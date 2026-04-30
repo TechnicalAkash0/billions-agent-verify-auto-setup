@@ -39,5 +39,5 @@ echo "🔗 Generating Verification Link..."
 node scripts/manualLinkHumanToAgent.js --challenge '{"name":"AkashAgent","description":"Auto setup by TechnicalAkash"}'
 
 echo "========================================"
-echo "✅ DONE! Copy the link above & open in browser"
+echo "✅ DONE! Copy the link above & open in browsers"
 echo "========================================"
