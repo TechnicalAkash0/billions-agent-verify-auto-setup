@@ -4,17 +4,6 @@ echo "========================================"
 echo "🚀 Billions Agent Auto Install Starting"
 echo "========================================"
 
-# Update system
-pkg update -y && pkg upgrade -y
-
-# Install base tools
-pkg install git -y
-
-# Install stable Node (LTS)
-echo "📦 Installing Node LTS..."
-pkg uninstall nodejs -y >/dev/null 2>&1
-pkg install nodejs-lts -y
-
 # Fix npm registry
 npm config set registry https://registry.npmjs.org/
 
