@@ -18,7 +18,7 @@ echo "📦 Cloning Billions repository..."
 git clone https://github.com/BillionsNetwork/verified-agent-identity.git
 
 # Enter folder safely
-cd verified-agent-identity* || { echo "❌ Repo folder not found!"; exit 1; }
+cd verified-agent-identity || { echo "❌ Repo folder not found!"; exit 1; }
 
 # Install dependencies
 echo "📥 Installing packages..."
