@@ -3,11 +3,11 @@ One-click Termux script to setup Billions Verified Agent Identity
 
 # 🚀 Billions Agent Verify Auto Setup
 
-One-click script to setup **Billions Verified Agent Identity** easily.
+One-click script to set up **Billions Verified Agent Identity** easily using Termux or PC.
 
 ---
 
-## ⚡ One-Line Install (Recommended 🔥)
+## ⚡ One-Line Install (Recommended)
 
 ```bash
 pkg install git -y && git clone https://github.com/TechnicalAkash0/billions-agent-verify-auto-setup && cd billions-agent-verify-auto-setup && chmod +x billions-agent-install.sh && ./billions-agent-install.sh
@@ -17,44 +17,47 @@ pkg install git -y && git clone https://github.com/TechnicalAkash0/billions-agen
 
 ## 📱 Supported Devices
 
-* ✅ Android (Termux)
-* ✅ Linux
-* ✅ Mac
-* ✅ Windows (WSL / Git Bash)
+* Android (Termux)
+* Linux
+* macOS
+* Windows (WSL or Git Bash)
 
 ---
 
-## 🔗 What This Script Does
+## 🔧 What This Script Does
 
-* Install Node.js & Git
-* Setup Billions identity automatically
-* Generate verification link
+* Installs Node.js and Git
+* Clones the official Billions repository
+* Installs all required dependencies
+* Creates a new identity
+* Generates a verification link
 
 ---
 
 ## ⚠️ Important
 
-* Script run hone ke baad ek **verification link milega**
-* Usko browser me open karo
-* Wallet connect karo
-* Human verification manually complete karo
+* After running the script, a **verification link** will be generated
+* Open the link in your browser
+* Connect your wallet
+* Complete the human verification manually
 
 ---
 
 ## ❗ Troubleshooting
 
-* Error aaye to VPN ON karo
-* Internet stable rakho
-* Dubara run kar sakte ho
+* If you face errors, try using a VPN
+* Ensure your internet connection is stable
+* You can re-run the script if needed
 
 ---
 
 ## 👨‍💻 Author
 
-**TechnicalAkashCrypto**
+*TechnicalAkashCrypto*
 
 ---
 
 ## ⭐ Support
 
-Agar helpful laga to repo ko ⭐ star zaroor do
+If this project helped you, please consider giving it a star ⭐
+
