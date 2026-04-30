@@ -4,16 +4,19 @@ echo "========================================"
 echo "🚀 Billions Agent Auto Install Starting"
 echo "========================================"
 
-# Update packages
 pkg update -y && pkg upgrade -y
 
 # Install dependencies
-pkg install nodejs git -y
+pkg install git -y
 
-# Fix npm registry
+# Force stable Node version
+pkg uninstall nodejs -y
+pkg install nodejs-lts -y
+
+# Fix npm
 npm config set registry https://registry.npmjs.org/
 
-# Clone repo safely (no error if exists)
+# Clone repo safely
 echo "📦 Setting up Billions repository..."
 if [ -d "verified-agent-identity" ]; then
   echo "⚠️ Repo already exists, using existing folder..."
@@ -21,12 +24,11 @@ else
   git clone https://github.com/BillionsNetwork/verified-agent-identity.git
 fi
 
-# Enter folder
 cd verified-agent-identity || { echo "❌ Repo folder not found!"; exit 1; }
 
 # Install packages
 echo "📥 Installing packages..."
-npm install
+npm install --force
 
 # Create identity
 echo "⚡ Creating Identity..."
