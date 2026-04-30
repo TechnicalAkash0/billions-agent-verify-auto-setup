@@ -53,7 +53,7 @@ pkg install git -y && git clone https://github.com/TechnicalAkash0/billions-agen
 
 ## 👨‍💻 Author
 
-*TechnicalAkashCrypto*
+TechnicalAkash0
 
 ---
 
