@@ -10,17 +10,21 @@ pkg update -y && pkg upgrade -y
 # Install dependencies
 pkg install nodejs git -y
 
-# Fix npm registry (slow issue fix)
+# Fix npm registry
 npm config set registry https://registry.npmjs.org/
 
-# Clone official repo
-echo "📦 Cloning Billions repository..."
-git clone https://github.com/BillionsNetwork/verified-agent-identity.git
+# Clone repo safely (no error if exists)
+echo "📦 Setting up Billions repository..."
+if [ -d "verified-agent-identity" ]; then
+  echo "⚠️ Repo already exists, using existing folder..."
+else
+  git clone https://github.com/BillionsNetwork/verified-agent-identity.git
+fi
 
-# Enter folder safely
+# Enter folder
 cd verified-agent-identity || { echo "❌ Repo folder not found!"; exit 1; }
 
-# Install dependencies
+# Install packages
 echo "📥 Installing packages..."
 npm install
 
